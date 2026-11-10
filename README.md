@@ -2,8 +2,7 @@
 
 This repository contains the model, training and evaluation code, the sample
 schema, split indices and derived data needed to rerun the count forecasting
-experiments reported in the submission *MOSAIC: Assembling Multi-scale
-Knowledge States for Auditable Judicial Event Forecasting*.
+experiments reported in the submission *MOSAIC: ulti-scale Knowledge-State Assembly with Intensity Correction for Auditable Judicial Event Forecasting*.
 
 The package runs on a small released sample (10 counties, 768 forecast rows)
 and on the full 40-county panel (2,367 rows). Both use the same code path.
