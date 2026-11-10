@@ -2,7 +2,7 @@
 
 This repository contains the model, training and evaluation code, the sample
 schema, split indices and derived data needed to rerun the count forecasting
-experiments reported in the EAAI submission *MOSAIC: Assembling Multi-scale
+experiments reported in the submission *MOSAIC: Assembling Multi-scale
 Knowledge States for Auditable Judicial Event Forecasting*.
 
 The package runs on a small released sample (10 counties, 768 forecast rows)
@@ -121,7 +121,7 @@ source collection described there.
 The directory is a self-contained repository. To publish it:
 
 ```bash
-cd eaai-mosaic-forecasting
+cd mosaic-event-forecasting
 git init
 git add .
 git commit -m "Release MOSAIC forecasting code and sample"
