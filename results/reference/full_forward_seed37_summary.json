@@ -1,0 +1,103 @@
+{
+  "samples": "data/full_panel/forecast_samples_l6_h123.parquet",
+  "samples_sha256": "6d944ffe4f46bef610707e6351b44307624fe6197084c78e9e9d8e5095d0f648",
+  "seed": 37,
+  "epochs": 25,
+  "feature_mode": "leakage_safe",
+  "prior_selected_on_validation": "fixed_w6",
+  "endpoint_selected_on_validation": "full_gate",
+  "endpoint_validation_scores": {
+    "full_gate": 0.4152193594510836,
+    "hurdle_endpoint": 0.4194645418289397
+  },
+  "split_sizes": {
+    "train": 1536,
+    "val": 507,
+    "test": 324
+  },
+  "test": {
+    "n": 324,
+    "rmse": 0.6995512889537855,
+    "rmse_row": 0.505404765901465,
+    "mae": 0.42954934553201063,
+    "mae_row": 0.4295493455320106,
+    "smape": 1.8423253336499805,
+    "trend_accuracy": 0.808641975308642
+  },
+  "validation_full_gate": {
+    "n": 507,
+    "rmse": 0.5014317937738805,
+    "rmse_row": 0.41521935964577744,
+    "mae": 0.3646000620910872,
+    "mae_row": 0.3646000620910872,
+    "smape": 1.8772591730470012,
+    "trend_accuracy": 0.8165680473372781
+  },
+  "test_prior": {
+    "n": 324,
+    "rmse": 0.7330620519528092,
+    "rmse_row": 0.5116145450355546,
+    "mae": 0.41803841053703683,
+    "mae_row": 0.41803841053703683,
+    "smape": 1.2430341606491104,
+    "trend_accuracy": 0.7777777777777778
+  },
+  "gate_test": {
+    "mean": 0.6001107692718506,
+    "min": 0.5117753744125366,
+    "max": 0.7378284931182861
+  },
+  "training": {
+    "best_val_loss": 0.3583538234233856,
+    "train_size": 1536
+  },
+  "feature_columns": [
+    "bucket_count_00_04",
+    "bucket_count_04_08",
+    "bucket_count_08_12",
+    "bucket_count_12_16",
+    "bucket_count_16_20",
+    "bucket_count_20_24",
+    "bucket_ratio_00_04",
+    "bucket_ratio_04_08",
+    "bucket_ratio_08_12",
+    "bucket_ratio_12_16",
+    "bucket_ratio_16_20",
+    "bucket_ratio_20_24",
+    "fine_level_1_unique_count",
+    "fine_level_2_unique_count",
+    "fine_location_parse_rate",
+    "growth_diff_1",
+    "lag_total_case_count_1",
+    "lag_total_case_count_2",
+    "lag_total_case_count_3",
+    "lag_total_case_count_4",
+    "lag_total_case_count_5",
+    "lag_total_case_count_6",
+    "month_cos",
+    "month_sin",
+    "rolling_mean_3",
+    "rolling_mean_6",
+    "rolling_std_3",
+    "rolling_std_6",
+    "space_valid_rate",
+    "time_valid_rate",
+    "type_drug_related_ratio",
+    "type_fraud_ratio",
+    "type_injury_assault_ratio",
+    "type_other_ratio",
+    "type_public_order_other_ratio",
+    "type_robbery_ratio",
+    "ust_centroid_mean",
+    "ust_centroid_std",
+    "ust_code_valid_rate",
+    "ust_entropy",
+    "ust_top1_code",
+    "ust_top1_ratio",
+    "ust_top2_code",
+    "ust_top2_ratio",
+    "ust_top3_code",
+    "ust_top3_ratio",
+    "ust_unique_count"
+  ]
+}

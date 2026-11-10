@@ -1,0 +1,51 @@
+{
+  "package_version": "1.0.0",
+  "generated_utc": "2026-11-10T15:48:30+00:00",
+  "full_sample_artifact": {
+    "path": "results/forecasting_benchmark/forecast_samples_l6_h123.parquet",
+    "sha256": "6d944ffe4f46bef610707e6351b44307624fe6197084c78e9e9d8e5095d0f648"
+  },
+  "monthly_panel_artifact": {
+    "path": "results/forecasting_benchmark/county_month_panel.csv",
+    "sha256": "407130139a5d46d3cd0692d02b4001295b0557e184d9fcc538d0af48d2cd97c1"
+  },
+  "released_sample_sha256": "de92ce90775db859b545c3d965ea3b7767dbea2d5ddb337688d6e5eabcebdf22",
+  "released_panel_sha256": "96c76e739e55b477e73fe8f44a234ade1c5100e9896c9e9324ed44a210ee6b0b",
+  "derivation": [
+    "county-month panel assembled from normalized criminal judgment records",
+    "six-month history and three target months per forecast origin",
+    "lag, rolling and calendar features recomputed from monthly counts",
+    "quality, composition, bucket and UST summaries copied from the monthly panel",
+    "feature matrix rebuilt from the released panel and checked against the full artifact"
+  ],
+  "verification": {
+    "rows_match_full_artifact_for_released_counties": true,
+    "features_match": true,
+    "max_abs_difference_reported": "relative tolerance 1e-5 on 52 feature columns"
+  },
+  "released_sample": {
+    "rows": 768,
+    "counties": 10,
+    "origins": 90,
+    "features": 52,
+    "types": 6
+  },
+  "model_parameter_count_leakage_safe": 99414,
+  "derived_hashes": {
+    "data/splits/forward_split.json": "9a3f0e84a9037fcf52c6c2c1cbd722af6a524fbb186ac3216bb8af609eed4106",
+    "data/splits/rolling_origins.csv": "dccacb3822c5f72b5a907491163e7f1ce9eef8536900246563e9e6a7ba9699d0",
+    "data/splits/county_folds.json": "4f1e561ebfa7218a2a4826e64493530a10cd5da3a9a83f26a3d68cefe87fa371",
+    "data/schema/forecast_sample_schema.json": "d6d793c2348469500c589d0ef9b74135ee2e0a4e7417d791cf5e625f65feaa1c",
+    "data/schema/feature_definitions.csv": "f82645f979f8f0d320d1d44185f263cf04c76b66485d4a6551365a6186113fc8",
+    "data/metadata/gate_parameters.json": "27c8ddd6506f6ec81052634e977cac7635f9eab37dae0cbbd888b8829313e0a9",
+    "data/full_panel/forecast_samples_l6_h123.parquet": "6d944ffe4f46bef610707e6351b44307624fe6197084c78e9e9d8e5095d0f648",
+    "data/full_panel/county_month_panel.csv": "407130139a5d46d3cd0692d02b4001295b0557e184d9fcc538d0af48d2cd97c1"
+  },
+  "rebuild_command": "python scripts/build_samples_from_panel.py",
+  "rebuild_verified": true,
+  "released_full_panel": {
+    "rows": 2367,
+    "counties": 40,
+    "origins": 90
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "panel_id": "mosaic_judicial_2010_2018_v1",
+  "target": "number of normalized judicial records per county and calendar month",
+  "target_semantics": "observed record count, not a population-adjusted crime rate",
+  "geography": "county-level administrative units in mainland China",
+  "history_length": 6,
+  "horizons": [
+    1,
+    2,
+    3
+  ],
+  "full_panel": {
+    "counties": 40,
+    "forecast_origins": 90,
+    "samples": 2367,
+    "split": {
+      "train": 1536,
+      "val": 507,
+      "test": 324
+    }
+  },
+  "released_sample": {
+    "counties": 10,
+    "samples": 768,
+    "forecast_origins": 90,
+    "selection": "ten counties with the longest histories in the 40-county panel"
+  },
+  "origin_window": {
+    "first": "2010-11",
+    "last": "2018-05"
+  },
+  "source": {
+    "name": "China Judgments Online (中国裁判文书网)",
+    "url": "https://wenshu.court.gov.cn/",
+    "record_type": "public criminal judgment documents",
+    "derived_fields": [
+      "county",
+      "incident month",
+      "offense type",
+      "time-of-day bucket",
+      "spatial summary"
+    ]
+  },
+  "redistribution": "only county-month aggregates and derived features; no judgment text, case numbers or personal names",
+  "task_b": "next-month offense-type distribution; excluded from this package because only five forward-test rows meet its eligibility rule",
+  "known_limitations": [
+    "counts depend on publishing and case-selection practice",
+    "incident months are recovered from judgment text and are less complete than judgment dates",
+    "missing months are treated as zero observed records after county eligibility",
+    "coordinates are administrative centroids"
+  ],
+  "released_full_panel": {
+    "rows": 2367,
+    "counties": 40,
+    "origins": 90,
+    "path": "data/full_panel/forecast_samples_l6_h123.parquet"
+  }
+}

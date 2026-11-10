@@ -1,0 +1,53 @@
+feature,group,definition,leakage_note
+bucket_count_00_04,seasonality,Count of incidents in the 00:00-04:00 four-hour bucket.,computed from the origin history only
+bucket_count_04_08,seasonality,Count of incidents in the 04:00-08:00 four-hour bucket.,computed from the origin history only
+bucket_count_08_12,seasonality,Count of incidents in the 08:00-12:00 four-hour bucket.,computed from the origin history only
+bucket_count_12_16,seasonality,Count of incidents in the 12:00-16:00 four-hour bucket.,computed from the origin history only
+bucket_count_16_20,seasonality,Count of incidents in the 16:00-20:00 four-hour bucket.,computed from the origin history only
+bucket_count_20_24,seasonality,Count of incidents in the 20:00-24:00 four-hour bucket.,computed from the origin history only
+bucket_ratio_00_04,seasonality,Share of incidents in the 00:00-04:00 four-hour bucket.,computed from the origin history only
+bucket_ratio_04_08,seasonality,Share of incidents in the 04:00-08:00 four-hour bucket.,computed from the origin history only
+bucket_ratio_08_12,seasonality,Share of incidents in the 08:00-12:00 four-hour bucket.,computed from the origin history only
+bucket_ratio_12_16,seasonality,Share of incidents in the 12:00-16:00 four-hour bucket.,computed from the origin history only
+bucket_ratio_16_20,seasonality,Share of incidents in the 16:00-20:00 four-hour bucket.,computed from the origin history only
+bucket_ratio_20_24,seasonality,Share of incidents in the 20:00-24:00 four-hour bucket.,computed from the origin history only
+fine_level_1_unique_count,spatial,Number of distinct coarse spatial cells.,computed from the origin history only
+fine_level_2_unique_count,spatial,Number of distinct fine spatial cells.,computed from the origin history only
+fine_location_parse_rate,quality,Share of locations parsed to county or finer.,computed from the origin history only
+fine_location_parse_rate_county,quality,"County-period value of the same rate or count, when available.",county-period statistic; excluded by leakage_safe feature modes
+growth_diff_1,history,One-month count difference.,computed from the origin history only
+lag_total_case_count_1,history,Total count 1 month(s) before the row month; zero when absent.,computed from the origin history only
+lag_total_case_count_2,history,Total count 2 month(s) before the row month; zero when absent.,computed from the origin history only
+lag_total_case_count_3,history,Total count 3 month(s) before the row month; zero when absent.,computed from the origin history only
+lag_total_case_count_4,history,Total count 4 month(s) before the row month; zero when absent.,computed from the origin history only
+lag_total_case_count_5,history,Total count 5 month(s) before the row month; zero when absent.,computed from the origin history only
+lag_total_case_count_6,history,Total count 6 month(s) before the row month; zero when absent.,computed from the origin history only
+month_cos,seasonality,Cosine of the forecast-origin month.,computed from the origin history only
+month_sin,seasonality,Sine of the forecast-origin month.,computed from the origin history only
+rolling_mean_3,history,Mean count over the previous three months.,computed from the origin history only
+rolling_mean_6,history,Mean count over the previous six months.,computed from the origin history only
+rolling_std_3,history,Standard deviation over the previous three months.,computed from the origin history only
+rolling_std_6,history,Standard deviation over the previous six months.,computed from the origin history only
+space_valid_rate,quality,Share of records with a usable incident location.,computed from the origin history only
+space_valid_rate_county,quality,"County-period value of the same rate or count, when available.",county-period statistic; excluded by leakage_safe feature modes
+time_valid_rate,quality,Share of records with a usable incident time.,computed from the origin history only
+time_valid_rate_county,quality,"County-period value of the same rate or count, when available.",county-period statistic; excluded by leakage_safe feature modes
+total_case_count_county,quality,"County-period value of the same rate or count, when available.",county-period statistic; excluded by leakage_safe feature modes
+type_drug_related_ratio,composition,Share of drug-related cases.,computed from the origin history only
+type_fraud_ratio,composition,Share of fraud cases.,computed from the origin history only
+type_injury_assault_ratio,composition,Share of injury and assault cases.,computed from the origin history only
+type_other_ratio,composition,Share of remaining cases.,computed from the origin history only
+type_public_order_other_ratio,composition,Share of public-order and other cases.,computed from the origin history only
+type_robbery_ratio,composition,Share of robbery cases.,computed from the origin history only
+ust_centroid_mean,spatial,Mean UST centroid code.,computed from the origin history only
+ust_centroid_std,spatial,Standard deviation of UST centroid codes.,computed from the origin history only
+ust_code_valid_rate,quality,Share of records with a valid UST code.,computed from the origin history only
+ust_code_valid_rate_county,quality,"County-period value of the same rate or count, when available.",county-period statistic; excluded by leakage_safe feature modes
+ust_entropy,spatial,Entropy of the UST code distribution.,computed from the origin history only
+ust_top1_code,spatial,Most frequent UST code.,computed from the origin history only
+ust_top1_ratio,spatial,Share of records with the most frequent UST code.,computed from the origin history only
+ust_top2_code,spatial,Second most frequent UST code.,computed from the origin history only
+ust_top2_ratio,spatial,Share of records with the second most frequent UST code.,computed from the origin history only
+ust_top3_code,spatial,Third most frequent UST code.,computed from the origin history only
+ust_top3_ratio,spatial,Share of records with the third most frequent UST code.,computed from the origin history only
+ust_unique_count,spatial,Number of distinct UST codes.,computed from the origin history only

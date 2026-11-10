@@ -1,0 +1,610 @@
+{
+  "samples": "data/sample/mosaic_sample_l6_h123.parquet",
+  "samples_sha256": "de92ce90775db859b545c3d965ea3b7767dbea2d5ddb337688d6e5eabcebdf22",
+  "seed": 37,
+  "epochs": 5,
+  "feature_mode": "leakage_safe",
+  "n_splits": 83,
+  "test": {
+    "n": 740,
+    "rmse": 0.630676249333719,
+    "rmse_row": 0.4821057146213902,
+    "mae": 0.4190659020431675,
+    "smape": 1.7901997383621064
+  },
+  "mean_split_rmse": 0.5991198619975066,
+  "endpoint_counts": {
+    "full_gate": 71,
+    "hurdle_endpoint": 12
+  },
+  "conformal": {
+    "coverage": 0.917016317016317,
+    "mean_width": 1.7375340159678514,
+    "alpha": 0.1,
+    "min_calibration": 20,
+    "n_evaluated": 2145
+  },
+  "splits": [
+    {
+      "split": 0,
+      "origin": "2011-06",
+      "n": 6,
+      "rmse": 0.5284532156971711,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 1,
+      "origin": "2011-07",
+      "n": 6,
+      "rmse": 0.37436154947985395,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 2,
+      "origin": "2011-08",
+      "n": 6,
+      "rmse": 0.5346507505612854,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 3,
+      "origin": "2011-09",
+      "n": 7,
+      "rmse": 0.5167472435324578,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 4,
+      "origin": "2011-10",
+      "n": 7,
+      "rmse": 0.4334160008534549,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 5,
+      "origin": "2011-11",
+      "n": 8,
+      "rmse": 0.48541283013780784,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 6,
+      "origin": "2011-12",
+      "n": 8,
+      "rmse": 0.6856006140193863,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 7,
+      "origin": "2012-01",
+      "n": 8,
+      "rmse": 0.7579407166286181,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 8,
+      "origin": "2012-02",
+      "n": 8,
+      "rmse": 0.713697909614527,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 9,
+      "origin": "2012-03",
+      "n": 9,
+      "rmse": 0.415047439357759,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 10,
+      "origin": "2012-04",
+      "n": 9,
+      "rmse": 0.5754323330221903,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 11,
+      "origin": "2012-05",
+      "n": 10,
+      "rmse": 0.5954719354857461,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 12,
+      "origin": "2012-06",
+      "n": 10,
+      "rmse": 0.8127471605105214,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 13,
+      "origin": "2012-07",
+      "n": 10,
+      "rmse": 0.7857955770410086,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 14,
+      "origin": "2012-08",
+      "n": 10,
+      "rmse": 0.9153537082172487,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 15,
+      "origin": "2012-09",
+      "n": 10,
+      "rmse": 0.7299916679563591,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 16,
+      "origin": "2012-10",
+      "n": 10,
+      "rmse": 0.6709151544373748,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 17,
+      "origin": "2012-11",
+      "n": 10,
+      "rmse": 0.5723309413377082,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 18,
+      "origin": "2012-12",
+      "n": 10,
+      "rmse": 0.6462747417340275,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 19,
+      "origin": "2013-01",
+      "n": 10,
+      "rmse": 0.7635552534761247,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 20,
+      "origin": "2013-02",
+      "n": 10,
+      "rmse": 0.6583964715443897,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 21,
+      "origin": "2013-03",
+      "n": 10,
+      "rmse": 0.593143255521562,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 22,
+      "origin": "2013-04",
+      "n": 10,
+      "rmse": 0.7651689873170989,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 23,
+      "origin": "2013-05",
+      "n": 10,
+      "rmse": 0.888073181955139,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 24,
+      "origin": "2013-06",
+      "n": 10,
+      "rmse": 1.0097000758597932,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 25,
+      "origin": "2013-07",
+      "n": 10,
+      "rmse": 0.8025927452069199,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 26,
+      "origin": "2013-08",
+      "n": 10,
+      "rmse": 0.7162972080422639,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 27,
+      "origin": "2013-09",
+      "n": 10,
+      "rmse": 0.4997963025283951,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 28,
+      "origin": "2013-10",
+      "n": 10,
+      "rmse": 0.5699046548204841,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 29,
+      "origin": "2013-11",
+      "n": 10,
+      "rmse": 0.5731617535838757,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 30,
+      "origin": "2013-12",
+      "n": 10,
+      "rmse": 0.5239844621944056,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 31,
+      "origin": "2014-01",
+      "n": 10,
+      "rmse": 0.4585326263402669,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 32,
+      "origin": "2014-02",
+      "n": 10,
+      "rmse": 0.48625993053860866,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 33,
+      "origin": "2014-03",
+      "n": 10,
+      "rmse": 0.41304270253843656,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 34,
+      "origin": "2014-04",
+      "n": 10,
+      "rmse": 0.3963827057473845,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 35,
+      "origin": "2014-05",
+      "n": 10,
+      "rmse": 0.4131382061257527,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 36,
+      "origin": "2014-06",
+      "n": 10,
+      "rmse": 0.5362676600425687,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 37,
+      "origin": "2014-07",
+      "n": 10,
+      "rmse": 0.5085397335385197,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 38,
+      "origin": "2014-08",
+      "n": 10,
+      "rmse": 0.451323687513143,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 39,
+      "origin": "2014-09",
+      "n": 10,
+      "rmse": 0.30130401042577976,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 40,
+      "origin": "2014-10",
+      "n": 10,
+      "rmse": 0.5158728009783448,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 41,
+      "origin": "2014-11",
+      "n": 10,
+      "rmse": 0.5023990230273927,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 42,
+      "origin": "2014-12",
+      "n": 10,
+      "rmse": 0.6485374520307629,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 43,
+      "origin": "2015-01",
+      "n": 10,
+      "rmse": 0.5106317059246537,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 44,
+      "origin": "2015-02",
+      "n": 10,
+      "rmse": 0.5009539975259182,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 45,
+      "origin": "2015-03",
+      "n": 10,
+      "rmse": 0.40847705517271815,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 46,
+      "origin": "2015-04",
+      "n": 10,
+      "rmse": 0.5896440189400133,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 47,
+      "origin": "2015-05",
+      "n": 10,
+      "rmse": 0.7464893829623207,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 48,
+      "origin": "2015-06",
+      "n": 10,
+      "rmse": 0.7842363557128095,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 49,
+      "origin": "2015-07",
+      "n": 10,
+      "rmse": 0.6852927281478444,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 50,
+      "origin": "2015-08",
+      "n": 10,
+      "rmse": 0.4977231584174068,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 51,
+      "origin": "2015-09",
+      "n": 10,
+      "rmse": 0.4616406644875878,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 52,
+      "origin": "2015-10",
+      "n": 10,
+      "rmse": 0.5195605842393157,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 53,
+      "origin": "2015-11",
+      "n": 10,
+      "rmse": 0.5187862591278835,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 54,
+      "origin": "2015-12",
+      "n": 10,
+      "rmse": 0.49315897064744657,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 55,
+      "origin": "2016-01",
+      "n": 10,
+      "rmse": 0.39943034434497915,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 56,
+      "origin": "2016-02",
+      "n": 10,
+      "rmse": 0.3400931275627411,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 57,
+      "origin": "2016-03",
+      "n": 10,
+      "rmse": 0.3147094488213408,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 58,
+      "origin": "2016-04",
+      "n": 10,
+      "rmse": 0.3278523484406385,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 59,
+      "origin": "2016-05",
+      "n": 10,
+      "rmse": 0.32050423609538237,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 60,
+      "origin": "2016-06",
+      "n": 10,
+      "rmse": 0.6139949526308607,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 61,
+      "origin": "2016-07",
+      "n": 10,
+      "rmse": 0.5986547060013817,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 62,
+      "origin": "2016-08",
+      "n": 10,
+      "rmse": 0.6291222357707633,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 63,
+      "origin": "2016-09",
+      "n": 10,
+      "rmse": 0.36842759052592006,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 64,
+      "origin": "2016-10",
+      "n": 9,
+      "rmse": 0.3406888396084304,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 65,
+      "origin": "2016-11",
+      "n": 9,
+      "rmse": 0.33173967332204873,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 66,
+      "origin": "2016-12",
+      "n": 9,
+      "rmse": 0.3005702081225398,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 67,
+      "origin": "2017-01",
+      "n": 9,
+      "rmse": 0.4255972869809723,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 68,
+      "origin": "2017-02",
+      "n": 9,
+      "rmse": 0.5530118000233649,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 69,
+      "origin": "2017-03",
+      "n": 9,
+      "rmse": 0.6250208434468835,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 70,
+      "origin": "2017-04",
+      "n": 9,
+      "rmse": 0.5107260046686276,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 71,
+      "origin": "2017-05",
+      "n": 9,
+      "rmse": 0.6283905475279147,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 72,
+      "origin": "2017-06",
+      "n": 9,
+      "rmse": 0.5647745860561946,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 73,
+      "origin": "2017-07",
+      "n": 9,
+      "rmse": 0.628754974168554,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 74,
+      "origin": "2017-08",
+      "n": 8,
+      "rmse": 1.4148579601839164,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 75,
+      "origin": "2017-09",
+      "n": 5,
+      "rmse": 1.8228314679057387,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 76,
+      "origin": "2017-10",
+      "n": 5,
+      "rmse": 1.787954514225147,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 77,
+      "origin": "2017-11",
+      "n": 5,
+      "rmse": 0.949840112240345,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 78,
+      "origin": "2017-12",
+      "n": 4,
+      "rmse": 0.3147617564356256,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 79,
+      "origin": "2018-01",
+      "n": 4,
+      "rmse": 0.4013941328373981,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 80,
+      "origin": "2018-02",
+      "n": 4,
+      "rmse": 0.7215466902405339,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "split": 81,
+      "origin": "2018-03",
+      "n": 2,
+      "rmse": 0.6095246689457192,
+      "endpoint": "full_gate"
+    },
+    {
+      "split": 82,
+      "origin": "2018-04",
+      "n": 1,
+      "rmse": 0.4205622268312468,
+      "endpoint": "hurdle_endpoint"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "forward": {
+    "train": 62,
+    "val": 14,
+    "test": 14
+  },
+  "forward_first_last": {
+    "train": [
+      "2010-11",
+      "2015-12"
+    ],
+    "val": [
+      "2016-01",
+      "2017-02"
+    ],
+    "test": [
+      "2017-03",
+      "2018-04"
+    ]
+  },
+  "rolling_splits": 83,
+  "rolling_rule": "train=prefix months, val=next month, test=following month",
+  "county_fold_rule": "int(sha256(county_id)[:8], 16) % 5"
+}

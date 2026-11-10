@@ -1,0 +1,93 @@
+{
+  "source": "Manuscript tables (main comparison and modern baselines); five-seed means on the 40-county panel",
+  "note": "These numbers are transcribed from the submitted manuscript. Seed-37 replays with this package are in results/reference/reference_metrics.json.",
+  "forward_rolling": {
+    "moving_average": {
+      "forward": 0.7831,
+      "rolling": 0.6566,
+      "rolling_trend": 0.7004
+    },
+    "poisson": {
+      "forward": 0.7002,
+      "rolling": 0.7136
+    },
+    "lag_season_ridge": {
+      "forward": 0.697
+    },
+    "zero_inflated_poisson": {
+      "forward": 0.7007
+    },
+    "hurdle_negative_binomial": {
+      "forward": 0.7005,
+      "rolling": 0.5952,
+      "rolling_trend": 0.7404
+    },
+    "xgboost": {
+      "forward": 0.7041,
+      "rolling": 0.6339,
+      "rolling_trend": 0.7179
+    },
+    "tft": {
+      "forward": 0.7736,
+      "rolling": 0.6546
+    },
+    "tsmixer": {
+      "forward": 0.7215,
+      "rolling": 0.7231
+    },
+    "mosaic_single_scale": {
+      "forward": 0.7098,
+      "rolling": 0.5929,
+      "rolling_trend": 0.7602
+    },
+    "mosaic_fixed_gate": {
+      "forward": 0.7033,
+      "rolling": 0.5884,
+      "rolling_trend": 0.7642
+    },
+    "mosaic_guarded": {
+      "forward": 0.7067,
+      "rolling": 0.5859,
+      "rolling_trend": 0.7686
+    }
+  },
+  "transfer": {
+    "sarima": {
+      "forward": 0.9639,
+      "rolling": 0.9383,
+      "temporal": 0.8981,
+      "county": 1.1552
+    },
+    "xgboost": {
+      "forward": 0.7041,
+      "rolling": 0.6339,
+      "temporal": 0.6717,
+      "county": 0.5968
+    },
+    "tft": {
+      "forward": 0.7736,
+      "rolling": 0.6546,
+      "temporal": 0.7343,
+      "county": 0.6638
+    },
+    "tsmixer": {
+      "forward": 0.7215,
+      "rolling": 0.7231,
+      "temporal": 0.6887,
+      "county": 0.6359
+    },
+    "mosaic_guarded": {
+      "forward": 0.7067,
+      "rolling": 0.5859,
+      "temporal": 0.6712,
+      "county": 0.5907
+    }
+  },
+  "uncertainty": {
+    "nominal": 0.9,
+    "coverage_h1": 0.881,
+    "coverage_h2": 0.871,
+    "coverage_h3": 0.856,
+    "mean_coverage": 0.869
+  }
+}

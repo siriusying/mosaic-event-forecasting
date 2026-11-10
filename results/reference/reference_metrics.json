@@ -1,0 +1,40 @@
+{
+  "manuscript": {
+    "rolling_rmse_five_seed_mean": 0.5859,
+    "rolling_rmse_sd": 0.0008,
+    "rolling_fixed_gate": 0.5884,
+    "rolling_hurdle_endpoint": 0.5865,
+    "forward_guarded": 0.7067,
+    "forward_guarded_sd": 0.0051,
+    "forward_multiscale": 0.7033,
+    "conformal_coverage_five_seed": 0.869,
+    "paired_delta_vs_moving_average": [
+      -0.0423,
+      -0.0249
+    ]
+  },
+  "reproduced_in_this_package": {
+    "forward_seed_37": {
+      "rmse": 0.6995512889537855,
+      "rmse_row": 0.505404765901465,
+      "mae": 0.42954934553201063,
+      "endpoint": "full_gate",
+      "prior": "fixed_w6",
+      "split": {
+        "train": 1536,
+        "val": 507,
+        "test": 324
+      }
+    },
+    "rolling_seed_37": {
+      "rmse": 0.5862756263546798,
+      "mean_split_rmse": 0.5857377571900134,
+      "endpoint_counts": {
+        "full_gate": 61,
+        "hurdle_endpoint": 22
+      },
+      "splits": 83
+    }
+  },
+  "note": "Forward and rolling values above use the full 40-county sample with leakage-safe features. The manuscript rolling value is a five-seed mean; the single-seed value here differs by about 0.0004 RMSE."
+}

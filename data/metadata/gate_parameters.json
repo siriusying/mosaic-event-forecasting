@@ -1,0 +1,81 @@
+{
+  "source": "guarded_mosaic_forward_gpu_20260912/guarded_mosaic_forward_gpu_20260912",
+  "parameters": [
+    {
+      "seed": 11,
+      "source": "guarded_mosaic_forward_gpu_20260912/seed11",
+      "beta": -0.005960071009508822,
+      "softplus_weights": {
+        "e_support": 0.9777826532447137,
+        "e_quality": 0.970359182752293,
+        "e_stability": 0.9703956972545281
+      },
+      "observed_gate_min": 0.5123423337936401,
+      "observed_gate_max": 0.738259494304657,
+      "reconstruction_abs_error_median": 2.4824428457304037e-08,
+      "reconstruction_abs_error_max": 7.888633657415767e-08,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "seed": 23,
+      "source": "guarded_mosaic_forward_gpu_20260912/seed23",
+      "beta": -0.007044639766766503,
+      "softplus_weights": {
+        "e_support": 0.9787554392495652,
+        "e_quality": 0.9696800572108591,
+        "e_stability": 0.96955646014217
+      },
+      "observed_gate_min": 0.5119249820709229,
+      "observed_gate_max": 0.7379466891288757,
+      "reconstruction_abs_error_median": 1.7401109553283334e-08,
+      "reconstruction_abs_error_max": 7.79891391466947e-08,
+      "endpoint": "hurdle_endpoint"
+    },
+    {
+      "seed": 37,
+      "source": "guarded_mosaic_forward_gpu_20260912/seed37",
+      "beta": -0.007719935924774934,
+      "softplus_weights": {
+        "e_support": 0.979174646388818,
+        "e_quality": 0.9692464343752746,
+        "e_stability": 0.9691371211937541
+      },
+      "observed_gate_min": 0.5116786956787109,
+      "observed_gate_max": 0.7377548813819885,
+      "reconstruction_abs_error_median": 2.192834469560978e-08,
+      "reconstruction_abs_error_max": 9.498756459169755e-08,
+      "endpoint": "full_gate"
+    },
+    {
+      "seed": 51,
+      "source": "guarded_mosaic_forward_gpu_20260912/seed51",
+      "beta": -0.007871083399383007,
+      "softplus_weights": {
+        "e_support": 0.9794408285188908,
+        "e_quality": 0.9691489072656705,
+        "e_stability": 0.9690182967743671
+      },
+      "observed_gate_min": 0.5116093754768372,
+      "observed_gate_max": 0.7377150654792786,
+      "reconstruction_abs_error_median": 1.6073362196777907e-08,
+      "reconstruction_abs_error_max": 9.139548839964817e-08,
+      "endpoint": "full_gate"
+    },
+    {
+      "seed": 73,
+      "source": "guarded_mosaic_forward_gpu_20260912/seed73",
+      "beta": -0.007680534288364516,
+      "softplus_weights": {
+        "e_support": 0.979109872625791,
+        "e_quality": 0.9692938117919856,
+        "e_stability": 0.9691913790020731
+      },
+      "observed_gate_min": 0.5116985440254211,
+      "observed_gate_max": 0.7377694249153137,
+      "reconstruction_abs_error_median": 1.7395499152250693e-08,
+      "reconstruction_abs_error_max": 5.858692209148586e-08,
+      "endpoint": "hurdle_endpoint"
+    }
+  ],
+  "recovery_method": "saved counterfactual gate columns plus leakage-safe evidence reconstruction; no refit"
+}
